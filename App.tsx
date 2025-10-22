@@ -173,15 +173,20 @@ const FinCrimeInsightsSection = () => {
     );
 };
 
-const LanguageBar = ({ name, level }: Language) => (
-  <div>
-      <div className="flex justify-between mb-1">
-          <span className="text-sm font-medium text-slate-700 dark:text-slate-300">{name}</span>
-      </div>
-      <div className="w-full bg-gray-200 dark:bg-slate-700 rounded-full h-2">
-          <div className="bg-teal-500 h-2 rounded-full" style={{ width: `${(level / 5) * 100}%` }}></div>
-      </div>
-  </div>
+interface LanguageBarProps {
+    name: string;
+    level: number;
+}
+
+const LanguageBar: React.FC<LanguageBarProps> = ({ name, level }) => (
+    <div>
+        <div className="flex justify-between mb-1">
+            <span className="text-sm font-medium text-slate-700 dark:text-slate-300">{name}</span>
+        </div>
+        <div className="w-full bg-gray-200 dark:bg-slate-700 rounded-full h-2">
+            <div className="bg-teal-500 h-2 rounded-full" style={{ width: `${(level / 5) * 100}%` }}></div>
+        </div>
+    </div>
 );
 
 const SkillsBentoGrid = () => (
@@ -210,7 +215,13 @@ const SkillsBentoGrid = () => (
             <div className="p-8 rounded-2xl bg-white dark:bg-slate-800/60 border border-gray-200 dark:border-slate-700 shadow-sm animate-fadeInUp" style={{animationDelay: '200ms'}}>
                 <h4 className="text-xl font-bold text-slate-800 dark:text-slate-100 mb-4">Languages</h4>
                 <div className="space-y-4">
-                    {languages.map((lang, i) => <LanguageBar key={i} {...lang} />)}
+                    {languages.map((lang, i) => (
+                        <LanguageBar 
+                            key={i} 
+                            name={lang.name} 
+                            level={lang.level} 
+                        />
+                    ))}
                 </div>
             </div>
             <div className="md:col-span-2 p-8 rounded-2xl bg-white dark:bg-slate-800/60 border border-gray-200 dark:border-slate-700 shadow-sm animate-fadeInUp" style={{animationDelay: '300ms'}}>
