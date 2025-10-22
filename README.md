@@ -10,11 +10,11 @@ View your app in AI Studio: https://ai.studio/apps/drive/1GTxThXy1nSj-Sb5O5cpfFR
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
-
+**Prerequisites:** Node.js
 
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
+2. Run the app:
    `npm run dev`
+
+Note: This project previously used an external Gemini API for the AI assistant. The assistant now answers strictly from the embedded resume (see `services/geminiService.ts`). No external API keys are required. To update the resume content used by the assistant, edit the CV text inside `services/geminiService.ts` or refactor it into a separate JSON file if preferred.

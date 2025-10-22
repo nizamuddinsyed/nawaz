@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import type { WorkExperience, Education, Language } from './types';
-import { MailIcon, PhoneIcon, MapPinIcon, AwardIcon, BotIcon, BriefcaseIcon, GraduationCapIcon, MenuIcon, XIcon, DownloadIcon, AlertTriangleIcon, ShieldCheckIcon, ArrowUpIcon, SunIcon, MoonIcon } from './components/Icons';
+import { MailIcon, PhoneIcon, MapPinIcon, AwardIcon, BotIcon, BriefcaseIcon, GraduationCapIcon, MenuIcon, XIcon, EyeIcon, AlertTriangleIcon, ShieldCheckIcon, ArrowUpIcon, SunIcon, MoonIcon } from './components/Icons';
 import { AIChatBot } from './components/AIChatBot';
 
 // Data from CV
@@ -315,9 +315,9 @@ const App: React.FC = () => {
                         <a href="#contact" onClick={(e) => handleNavLinkClick('contact', e)} className="w-full sm:w-auto bg-teal-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-teal-600 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
                             Get In Touch
                         </a>
-                        <a href="/Nawazuddin_Sirajuddin_CV.pdf" download="Nawazuddin_Sirajuddin_CV.pdf" className="w-full sm:w-auto flex items-center justify-center gap-2 text-teal-600 dark:text-teal-400 font-semibold px-6 py-3 rounded-lg border border-gray-300 dark:border-slate-600 hover:bg-gray-100 dark:hover:bg-slate-800 hover:border-gray-400 dark:hover:border-slate-500 transition-all">
-                            <DownloadIcon className="w-5 h-5"/>
-                            Download CV
+                        <a href="https://drive.google.com/file/d/1mPXaWtKXFe837UCQlV3Yha_3DDhnhWFk/view" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex items-center justify-center gap-2 text-teal-600 dark:text-teal-400 font-semibold px-6 py-3 rounded-lg border border-gray-300 dark:border-slate-600 hover:bg-gray-100 dark:hover:bg-slate-800 hover:border-gray-400 dark:hover:border-slate-500 transition-all">
+                            <EyeIcon className="w-5 h-5"/>
+                            View CV
                         </a>
                     </div>
                 </div>
