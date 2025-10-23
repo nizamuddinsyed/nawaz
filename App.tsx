@@ -10,9 +10,10 @@ const workExperiences: WorkExperience[] = [
   { company: 'WELLS FARGO INDIA SOLUTIONS', role: 'KYC Analyst', period: '07/2016 – 08/2019', location: 'BANGALORE, INDIA', sections: [{ title: 'Key Responsibilities', tasks: ['Verified identity documents and onboarding details in line with CIP, KYC, and BSA requirements.', 'Reviewed corporate ownership hierarchies and UBO disclosures.', 'Conducted systematic CDD/EDD using World-Check, OFAC, and adverse media sources.', 'Assessed risk ratings for high-risk jurisdictions, complex shareholding patterns, and shell companies.'] }] },
 ];
 const education: Education = { degree: 'BCOM', institution: 'Bangalore University', location: 'Bangalore, India' };
-const skills: string[] = ['KYC/CDD/EDD', 'AML/CTF', 'Transaction Monitoring', 'Sanctions & PEP Screening', 'SAR/STR Reporting', 'Risk Assessment', 'Fraud Detection', 'Compliance', 'World-Check', 'LexisNexis'];
+const skills: string[] = ['KYC/CDD/EDD', 'AML/CTF', 'Transaction Monitoring', 'Sanctions & PEP Screening', 'SAR/STR Reporting', 'Risk Assessment', 'Fraud Detection', 'Compliance', 'World-Check', 'LexisNexis', 'BaFin', 'EU 6AMLD',
+'FATF', 'FinCEN', 'OFAC'];
 const tools: string[] = ['ComplyAdvantage', 'Chainalysis', 'Feedzai', 'Actimize', 'Refinitiv (World-Check)', 'Digital IDV Solutions (Onfido, Veriff)', 'SQL & Python', 'Modern Case Mgmt. Platforms'];
-const languages: Language[] = [{ name: 'English', level: 5 }, { name: 'Urdu', level: 4 }, { name: 'German', level: 2 }];
+const languages: Language[] = [{ name: 'English', level: 5 }, { name: 'Hindi', level: 4 }, { name: 'German', level: 2 }];
 const awards: string[] = ['Multiple Achieving Excellence Awards', 'Multiple Shared Success Awards', 'Multiple Top Performer Awards'];
 const navLinks = [{ href: '#about', label: 'About' }, { href: '#experience', label: 'Experience' }, { href: '#insights', label: 'Insights' }, { href: '#skills', label: 'Skills' }, { href: '#contact', label: 'Contact' }];
 
@@ -326,7 +327,7 @@ const App: React.FC = () => {
                         <a href="#contact" onClick={(e) => handleNavLinkClick('contact', e)} className="w-full sm:w-auto bg-teal-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-teal-600 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
                             Get In Touch
                         </a>
-                        <a href="https://drive.google.com/file/d/1mPXaWtKXFe837UCQlV3Yha_3DDhnhWFk/view" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex items-center justify-center gap-2 text-teal-600 dark:text-teal-400 font-semibold px-6 py-3 rounded-lg border border-gray-300 dark:border-slate-600 hover:bg-gray-100 dark:hover:bg-slate-800 hover:border-gray-400 dark:hover:border-slate-500 transition-all">
+                        <a href="https://drive.google.com/file/d/1NH434yYX7RBIwfOaYzZl0bL67fsDWn92/view" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex items-center justify-center gap-2 text-teal-600 dark:text-teal-400 font-semibold px-6 py-3 rounded-lg border border-gray-300 dark:border-slate-600 hover:bg-gray-100 dark:hover:bg-slate-800 hover:border-gray-400 dark:hover:border-slate-500 transition-all">
                             <EyeIcon className="w-5 h-5"/>
                             View CV
                         </a>
@@ -361,7 +362,7 @@ const App: React.FC = () => {
                      <div className="flex flex-col sm:flex-row items-center justify-center gap-x-8 gap-y-4">
                         <a href="mailto:contact.nawazz@gmail.com" className="flex items-center gap-3 group text-base sm:text-lg">
                           <MailIcon className="w-6 h-6 text-gray-400 dark:text-slate-500 group-hover:text-teal-500 transition-colors" />
-                          <span className="text-slate-700 dark:text-slate-300 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">contact.nawazz@gmail.com</span>
+                          <span className="text-slate-700 dark:text-slate-300 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">contact [dot] nawazz [at] gmail [dot] com</span>
                         </a>
                         <div className="flex items-center gap-3 text-base sm:text-lg">
                           <PhoneIcon className="w-6 h-6 text-gray-400 dark:text-slate-500" />
